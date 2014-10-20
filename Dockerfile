@@ -1,5 +1,5 @@
-FROM busybox:latest
+FROM scratch
 
 MAINTAINER merlin83
 
-ADD files/fs /
+ADD rootfs.tar /
