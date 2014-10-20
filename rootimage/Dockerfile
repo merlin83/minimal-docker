@@ -30,8 +30,6 @@ RUN wget -nv http://buildroot.uclibc.org/downloads/buildroot-$BR_VERSION.tar.gz 
     gpg --import pubkey.gpg &&\
     gpg --verify buildroot-$BR_VERSION.tar.gz.sign
 
-ENV TEST 123
-
 # Extract
 RUN tar -zxf buildroot-$BR_VERSION.tar.gz &&\
     mv -f buildroot-$BR_VERSION buildroot
